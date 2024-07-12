@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedback.css"/>
+</head>
+
+<body> 
+    <div class="homebanner">
+    <div class="navbar">
+        <img src="logo.jpeg" class="logo" >
+        <div class="horizontal-list">
+        <ul>
+            <li><a href="fhome.html">HOME</a></li>
+            <li><a href="attendance.html">ATTENDANCE</a></li>
+            <li><a href="fevents.html" class="events-link">EVENTS</a></li>
+            <li><a href="facfb.html" class="feedback-link">FEEDBACK</a></li>
+        </ul></div>
+          </div>
+    <div class="container">
+       
+        <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;">FACULTY FEEDBACK FORM</h1>
+        <div class="image">
+            <div class="form-group">
+                <label for="department"><b>Department:</b></label>
+                <select id="department" name="department">
+                    <option value="">Select Department</option>
+                    <option value="department1">Department of CS</option>
+                    <option value="department2">Department of Commerce</option>
+                    <option value="department3">Department of Tamil</option>
+                    <option value="department4">Department of English</option>
+                    <option value="department5">Department of Tamil</option>
+                    <option value="department6">Department of Bio-chemistry</option>
+                    <option value="department7">Department of Bio-Technology</option>
+                    <option value="department8">Department of Micro-biology</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="degree"><b>Degree:</b></label>
+                <select id="degree" name="degree">
+                    <option value="">Select Degree</option>
+                    <option value="degree1">BCA</option>
+                    <option value="degree2">B.Sc</option>
+                    <option value="degree3">B.COM</option>
+                    <option value="degree4">BA</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="academicYear"><b>Academic Year:</b></label>
+                <select id="academicYear" name="academicYear">
+                    <option value=""><b>Select Academic Year</b></option>
+                    <option value="academicYear1">2019-2022</option>
+                    <option value="academicYear2">2020-2023</option>
+                    <option value="academicYear3">2021-2024</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="semester"><b>Semester:</b></label>
+                <select id="semester" name="semester">
+                    <option value="">Select Semester</option>
+                    <option value="semester1">1</option>
+                    <option value="semester2">2</option>
+                    <option value="semester3">3</option>
+                    <option value="semester4">4</option>
+                    <option value="semester5">5</option>
+                    <option value="semester6">6</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="paperName"><b>Name of the Paper</b></label>
+                <input type="text" id="paperName" name="paperName">
+            </div>
+            <div class="form-group">
+                <label for="subjectCode"><b>Subject Code</b></label>
+                <input type="text" id="subjectCode" name="subjectCode">
+            </div>
+            <div class="form-group">
+                <label for="staffName"><b>Name of the Staff</b></label>
+                <input type="text" id="staffName" name="staffName">
+            </div>
+            <div class="form-group">
+                <label for="syllabusSuitable"><b>1. Syllabus is suitable to the course?</b></label>
+                <select id="syllabusSuitable" name="syllabusSuitable">
+                    <option value="">Select Rating</option>
+                    <option value="excellent">EXCELLENT</option>
+                    <option value="veryGood">VERY GOOD</option>
+                    <option value="good">GOOD</option>
+                    <option value="average">AVERAGE</option>
+                    <option value="poor">POOR</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="syllabusCurriculumBased"><b>2. Syllabus is curriculum Based?</b></label>
+                <select id="syllabusCurriculumBased" name="syllabusCurriculumBased">
+                    <option value="">Select Rating</option>
+                    <option value="excellent">EXCELLENT</option>
+                    <option value="veryGood">VERY GOOD</option>
+                    <option value="good">GOOD</option>
+                    <option value="average">AVERAGE</option>
+                    <option value="poor">POOR</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="syllabusAimObjective"><b>3. Aim and Objective of the Syllabus is well Degined and
+                        Clear?</b></label>
+                <select id="syllabusAimObjective" name="syllabusAimObjective">
+                    <option value="">Select Rating</option>
+                    <option value="excellent">EXCELLENT</option>
+                    <option value="veryGood">VERY GOOD</option>
+                    <option value="good">GOOD</option>
+                    <option value="average">AVERAGE</option>
+                    <option value="poor">POOR</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="syllabusCourseContent"><b>4. Course, Content is followed by </b></label>
+                <select id="syllabusCourseContent" name="syllabusCourseContent">
+                    <option value="">Select Rating</option>
+                    <option value="books">BOOKS</option>
+                    <option value="materials">MATERIALS</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="syllabusAddTopic"><b>5. Any other Topic and Techniques to be added?</b></label>
+                <select id="syllabusAddTopic" name="syllabusAddTopic">
+                    <option value="">Select Option</option>
+                    <option value="yes">YES</option>
+                    <option value="no">NO</option>
+                </select>
+            </div>
+            <div id="addTopic" style="display: none;">
+                <div class="form-group">
+                    <label for="addTopicInput"><b>Add Topic/Technique:</b></label>
+                    <textarea id="addTopicInput" name="addTopicInput" rows="6"></textarea>
+                </div>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+    </div>
+    <script>
+        document.getElementById("syllabusAddTopic").addEventListener("change", function () {
+            if (this.value === "yes") {
+                document.getElementById("addTopic").style.display = "block";
+            } else {
+                document.getElementById("addTopic").style.display = "none";
+            }
+        });
+    </script>
+</body>
+
+</html>

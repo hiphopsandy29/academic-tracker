@@ -1,0 +1,74 @@
+@media screen {
+    
+*{
+    padding: 0%;
+    margin: 0%;
+}}
+.regbanner{
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+    display: flex;
+    justify-content: center;
+}
+
+.rwrapper{
+    margin-top: 150px;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 20px;
+    border: 2px solid rgb(15, 15, 15);
+    color: rgb(3, 3, 3);
+    border-radius: 12px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    
+}    
+.rwrapper button{
+    border: none;
+    background: rgb(249, 249, 250);
+    color: rgb(12, 12, 12);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+   margin-left: 40%;
+   margin-top: 2%;
+}
+.form-group {
+    margin-bottom: 1px;
+    flex: content;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.form-group label{
+     display: block;
+     margin-bottom: 5px;
+     color: rgb(15, 15, 14);
+     margin-top: 1%;
+     
+}
+.form-group input[type="text"],
+.form-group select{
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #2c2525;
+    border-radius: 4px;
+    background-color: rgb(242, 248, 248);
+}
+.form-group textarea{
+     width: 100%;
+    padding: 8px;
+    border: 1px solid #fcf4f4;
+    border-radius: 4px;
+    resize: none;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT FEEDBACK FORM</title>
+    <link rel="stylesheet" href="feedback.css"/>
+</head>
+<body>
+    <div class="homebanner">
+        <div class="navbar">
+            <img src="logo.jpeg" class="logo" >
+            <div class="horizontal-list">
+            <ul>
+                <li><a href="shome.html">HOME</a></li>
+                  <li><a href="assignment.html">ASSIGNMENT</a></li>
+                  <li><a href="sevents.html" class="events-link">EVENTS</a></li>
+                  <li><a href="stufb.html" class="feedback-link">FEEDBACK</a></li>
+                  <li><a href="cgpa.html" class="mark-link">CGPA</a></li>
+                  <li><a href="camdrive.html" class="camdrive-link">CAMPUS DRIVE</a></li>
+            </ul></div>
+              </div>
+    <div class="container">
+    <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;">STUDENT FEEDBACK FORM</h1>
+    
+        <div class="form-group" style="width: 550px;">
+            <label for="department"><b>Department:</b></label>
+            <select id="department" name="department">
+                <option value="">Select Department</option>
+                <option value="department1">Department of CS</option>
+                <option value="department2">Department of Commerce</option>
+                <option value="department3">Department of Tamil</option>
+            </select>
+        </div>
+        <div class="form-group" style="width: 550px;">
+            <label for="shift"><b>Shift:</b></label>
+            <select id="shift" name="shift">
+                <option value="">Select Shift</option>
+                <option value="shift1">1</option>
+                <option value="shift2">2</option>
+            </select>
+        </div>
+        <div class="form-group" style="width: 550px;">
+            <label for="degree"><b>Degree:</b></label>
+            <select id="degree" name="degree">
+                <option value="">Select Degree</option>
+                <option value="degree1">BCA</option>
+                <option value="degree2">CS</option>
+                <option value="degree3">B.COM</option>
+                <option value="degree4">BA.TAMIL</option>
+            </select>
+        </div>
+        <div class="form-group" style="width: 550px;">
+            <label for="academicYear"><b>Academic Year:</b></label>
+            <select id="academicYear" name="academicYear">
+                <option value=""><b>Select Academic Year</b></option>
+                <option value="academicYear1">2019-2022</option>
+                <option value="academicYear2">2020-2023</option>
+                <option value="academicYear3">2021-2024</option>
+            </select>
+        </div>
+        <div class="form-group" style="width: 550px;">
+            <label for="semester"><b>Semester:</b></label>
+            <select id="semester" name="semester">
+                <option value="">Select Semester</option>
+                <option value="semester1">1</option>
+                <option value="semester2">2</option>
+                <option value="semester3">3</option>
+                <option value="semester4">4</option>
+                <option value="semester5">5</option>
+                <option value="semester6">6</option>
+            </select>
+        </div>
+        <div class="form-group" style="width: 550px;">
+            <label for="paperName"><b>Name of the Paper</b></label>
+            <input type="text" id="paperName" name="paperName">
+        </div>
+        <div class="form-group" style="width: 550px;">
+            <label for="subjectCode"><b>Subject Code</b></label>
+            <input type="text" id="subjectCode" name="subjectCode">
+        </div>
+        <div class="form-group" style="width: 550px;">
+            <label for="staffName"><b>Name of the Staff</b></label>
+            <input type="text" id="staffName" name="staffName">
+        </div>
+        <div class="form-group" style="width: 550px;">
+            <label for="credits"><b>1. How do you rate the allocation of credits to the course?</b></label>
+            <select id="credits" name="credits">
+                <option value="">Select Rating</option>
+                <option value="excellent">EXCELLENT</option>
+                <option value="veryGood">VERY GOOD</option>
+                <option value="good">GOOD</option>
+                <option value="average">AVERAGE</option>
+                <option value="poor">POOR</option>
+            </select>
+        </div>
+        <div class="form-group" style="width: 550px;">
+            <label for="sizeofthesyllabus"><b>2. Rate the size of the syllabus in terms of the students?</b></label>
+            <select id="sizeofthesyllabus" name="sizeofthesyllabus">
+                <option value="">Select Rating</option>
+                <option value="excellent">EXCELLENT</option>
+                <option value="veryGood">VERY GOOD</option>
+                <option value="good">GOOD</option>
+                <option value="average">AVERAGE</option>
+                <option value="poor">POOR</option>
+            </select>
+        </div>
+        <div class="form-group" style="width: 550px;">
+            <label for="syllabusobjective"><b>3. How do you rate the objectives started for the course? </b></label>
+            <select id="syllabusobjective" name="syllabusobjective">
+                <option value="">Select Rating</option>
+                <option value="excellent">EXCELLENT</option>
+                <option value="veryGood">VERY GOOD</option>
+                <option value="good">GOOD</option>
+                <option value="average">AVERAGE</option>
+                <option value="poor">POOR</option>
+            </select>
+        </div>
+        <div class="form-group" style="width: 550px;">
+            <label for="syllabusAddTopic"><b>4. Any other Topic and Techniques to be added?</b></label>
+            <select id="syllabusAddTopic" name="syllabusAddTopic">
+                <option value="">Select Option</option>
+                <option value="yes">YES</option>
+                <option value="no">NO</option>
+            </select>
+        </div>
+        <div id="addTopic" style="display: none;">
+            <div class="form-group">
+                <label for="addTopicInput"><b>Add Topic/Technique:</b></label>
+                <textarea id="addTopicInput" name="addTopicInput" style="width: 490px; height: 100px;"></textarea>
+            </div>
+        </div>
+        <button>SUBMIT</button>
+    </form>
+    </div>
+    </div>
+    <script>
+        document.getElementById("syllabusAddTopic").addEventListener("change", function() {
+            if (this.value === "yes") {
+                document.getElementById("addTopic").style.display = "block";
+            } else {
+                document.getElementById("addTopic").style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>

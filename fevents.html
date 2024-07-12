@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="events.css" />
+  </head>
+  <body>
+    <div class="evebanner">
+      <div class="navbar">
+        <img src="logo.jpeg" class="logo" >
+        <div class="horizontal-list">
+        <ul>
+    
+          <li><a href="fhome.html">HOME</a></li>
+          <li><a href="attendance.html">ATTENDANCE</a></li>
+          <li><a href="fevents.html" class="events-link">EVENTS</a></li>
+          <li><a href="facfb.html" class="feedback-link">FEEDBACK</a></li>
+      </ul></div>
+     </div>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="confete.png" alt="1" />
+          <h1>CS</h1>
+          <div class="details">
+            <h2>COMPUTER SCIENCE</h2>
+            <p>MARCH 22</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="sports.png" alt="2" />
+          <h1>sports</h1>
+          <div class="details">
+            <h2>annual sports day</h2>
+            <p>march 31</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="litraryfest.png" alt="3" />
+          <h1>english</h1>
+          <div class="details">
+            <h2>litrary fest</h2>
+            <p>APRIL 2</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="collegecollage.png" alt="4" />
+          <h1>BBA</h1>
+          <div class="details">
+            <h2>college collage</h2>
+            <p>march 15</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="paavai.png" alt="5" />
+          <h1>tamil</h1>
+          <div class="details">
+            <h2>tamil paavai</h2>
+            <p>APRIL 11</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="srushti.png" alt="6" />
+          <h1>B.COM</h1>
+          <div class="details">
+            <h2>srushti bazzar</h2>
+            <p>march 21</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="techblast.png" alt="7" />
+          <h1>cs</h1>
+          <div class="details">
+            <h2>tech blast</h2>
+            <p>february 22</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <script src="slider.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
